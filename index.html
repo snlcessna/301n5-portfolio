@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <title>Larry's Portfolio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -22,8 +22,7 @@
       <h2>If at any time you feel the need to hire me, click on the about me page above and call the number on the screen.</h2>
     </section>
     <nav class="main-nav">
-
-
+      <div class="icon-menu"></div>
       <ul>
         <li class="tab" data-content="projects"><a href="#" class="icon-home"> Home</a></li>
         <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
@@ -34,17 +33,19 @@
   </header>
   <main>
     <section id="projects" class="tab-content">
-      <article class="clearfix" data-category="busmall">
+      <project class="clearfix" data-category="cat">
         <header>
-          <h1>Project</h1>
+          <h1>Title</h1>
           <div class="byline">
-            By <address><a href="">Me</a></address>
-            published <time pubdate="" datetime="2017-07-05" title="2017-07-05">about 30 days ago</time>
+            By <address><a href="">Author Name</a></address>
+            published <time pubdate="" datetime="2017-07-05" title="2000-01-01">Publish Time</time>
           </div>
         </header>
-        <section class="article-body"><p>Words, stuff, and other things.</p></section>
-      </article>
+        <section class="project-body"><p>Words, stuff, and other things.</p></section>
+      </project>
   </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
   </body>
-  
+
 </html>
