@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Larry's Portfolio (07)</title>
-
+    <title>Larry's Portfolio, part 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -23,28 +23,28 @@
     </section>
     <nav class="main-nav">
 
-
-      <ul>
-        <li class="tab" data-content="projects"><a href="#" class="icon-home"> Home</a></li>
-        <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
-        <li><a href="https://www.linkedin.com/in/larry-cessna-6a070b74/" target="_blank" class="icon-linkedIn"> LinkedIn</a></li>
-        <li><a href="http://github.com/snlcessna" target="_blank" class="icon-github"> GitHub</a></li>
+      <ul id="navbar">
+        <li class="navhome" data-content="home"><a href="#"> Home</a></li>
+        <li class="navabout" data-content="about"><a href="#"> About</a></li>
+        <li class="navlinkedin"><a href="https://www.linkedin.com/in/larry-cessna-6a070b74/" target="_blank"> LinkedIn</a></li>
+        <li class="navgithub"><a href="http://github.com/snlcessna" target="_blank"> GitHub</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section id="projects" class="tab-content">
-      <article class="clearfix" data-category="busmall">
-        <header>
-          <h1>Project</h1>
-          <div class="byline">
-            By <address><a href="">Me</a></address>
-            published <time pubdate="" datetime="2017-07-05" title="2017-07-05">about 30 days ago</time>
-          </div>
-        </header>
-        <section class="article-body"><p>Words, stuff, and other things.</p></section>
-      </article>
+  <main id="main-content">
+    <section id="home">
+      <p>This is the home tab.</p>
+    </section>
+    <section id="about">
+      <p>This is the "About" tab.</p>
+    </section>
+    <section id="linkedin">
+      <p>HIRE ME!</p>
+    </section>
+    <section id="github">
+      <p>Remember, I'm new to programming.</p>
+    </section>
   </main>
   </body>
-
+  <script src="./app.js" type="text/javascript"></script>
 </html>

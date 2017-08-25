@@ -1,9 +1,13 @@
 'use strict'
 
-var Projects (name, describe, projectURL, finishedOn){
-  this.name = name; <!-- Self explanatory -->
-  this.describe = describe; <!-- Description of the project -->
-  this.projectURL = projectURL;
-  this.finishedOn = finishedOn;
+$(document).ready(function(){
+  $('#main-content section').not('#home').hide();
+  $('#navbar li').on('click', function(e){
+    e.preventDefault();
+    let clickedOn = $(this).attr('class').replace('nav', '');
+    $(`#${clickedOn}`).show();
+    $('#main-content section').not(`#${clickedOn}`).hide();
 
-}
+  })
+
+})
