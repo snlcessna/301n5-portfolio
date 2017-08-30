@@ -3,14 +3,21 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Larry's Portfolio, part 3</title>
+    <title>Larry's Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v4.0.10.js"></script>
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/icons.css">
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/layout.css">
     <link rel="stylesheet" href="/styles/modules.css">
     <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+    <script id="template" type="text/x-handlebars-template">
+      <section id='{{tab-id}}'>
+        <p>{{tab-body}}</p>
+      </section>
+    </script>
+
   </head>
 
   <body>
@@ -32,19 +39,9 @@
     </nav>
   </header>
   <main id="main-content">
-    <section id="home">
-      <p>This is the home tab.</p>
-    </section>
-    <section id="about">
-      <p>This is the "About" tab.</p>
-    </section>
-    <section id="linkedin">
-      <p>HIRE ME!</p>
-    </section>
-    <section id="github">
-      <p>Remember, I'm new to programming.</p>
-    </section>
+
   </main>
   </body>
+
   <script src="/scripts/app.js" type="text/javascript"></script>
 </html>
