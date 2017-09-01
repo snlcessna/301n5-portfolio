@@ -12,11 +12,19 @@
       console.log('fail!');
       console.log(err);
     });
-  $.getJSON('/scripts/jobs.json')
-  .done(function(jobs) {
-    $()
-  });
-
+    var repos = [];
+    $.get('https://api.github.com/users/snlcessna/repos', function(data){
+      repos = data.map(function(repo){
+        return repo.name;
+      }).reduce(function(previous, current){
+        if(!current.match('201n8')){
+          return previous.concat(current);
+        } else {
+          return previous;
+        }
+      }, []);
+      console.log(repos);
+    });
 })();
 
 $(document).ready(function(){
